@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="50%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+
+    <!-- Truck Metallic / Accent Gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+
+    <!-- Gold Accent for Star / Speed -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.28" />
+    </filter>
+  </defs>
+
+  <!-- Base Rounded Squirecle -->
+  <rect width="512" height="512" rx="120" fill="url(#bgGrad)" />
+  <rect x="8" y="8" width="496" height="496" rx="112" fill="none" stroke="#ffffff" stroke-opacity="0.2" stroke-width="8" />
+
+  <g filter="url(#shadow)">
+    <!-- Speed Wings / Motion Streaks -->
+    <path d="M70 170 L140 170" stroke="#ffffff" stroke-width="16" stroke-linecap="round" opacity="0.65" />
+    <path d="M50 220 L150 220" stroke="#ffffff" stroke-width="18" stroke-linecap="round" opacity="0.9" />
+    <path d="M80 270 L135 270" stroke="#ffffff" stroke-width="16" stroke-linecap="round" opacity="0.65" />
+
+    <!-- Moving Logistics Truck Container -->
+    <rect x="155" y="150" width="190" height="170" rx="20" fill="#ffffff" />
+    
+    <!-- Letter G Emblem inside Container -->
+    <path d="M260 205 C240 205 225 218 225 235 C225 252 240 265 260 265 C275 265 285 256 288 245 L260 245 L260 230 L305 230 C306 235 306 240 306 245 C306 270 286 285 258 285 C226 285 204 263 204 235 C204 207 226 185 258 185 C276 185 292 193 302 205 L285 220 C278 211 269 205 260 205 Z" fill="url(#bgGrad)" />
+
+    <!-- Truck Cabin -->
+    <path d="M350 200 L400 200 C412 200 422 208 428 218 L450 255 C454 262 456 270 456 278 L456 320 C456 328 450 334 442 334 L350 334 Z" fill="#ffffff" />
+
+    <!-- Windshield Glass -->
+    <path d="M365 216 L400 216 L424 258 L365 258 Z" fill="#047857" opacity="0.9" />
+
+    <!-- Cabin Headlight -->
+    <circle cx="440" cy="295" r="8" fill="url(#goldGrad)" />
+
+    <!-- Wheels Base -->
+    <!-- Rear Wheel -->
+    <circle cx="215" cy="335" r="42" fill="#0f172a" stroke="#ffffff" stroke-width="12" />
+    <circle cx="215" cy="335" r="16" fill="url(#goldGrad)" />
+    
+    <!-- Front Wheel -->
+    <circle cx="395" cy="335" r="42" fill="#0f172a" stroke="#ffffff" stroke-width="12" />
+    <circle cx="395" cy="335" r="16" fill="url(#goldGrad)" />
+
+    <!-- Verified Eco Leaf / Security Badge Accent -->
+    <path d="M125 105 C145 105 160 120 160 140 C160 160 140 175 125 175 C125 155 110 140 110 120 C110 105 125 105 125 105 Z" fill="url(#goldGrad)" opacity="0.95" />
+  </g>
+</svg>
